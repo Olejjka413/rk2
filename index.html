@@ -8,7 +8,6 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&family=Saira&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/logo2.png" type="image/png">
 </head>
 <body>
     <header class="page__header">
@@ -74,7 +73,7 @@
         <div class="form">
             <label for="title">Название</label>
             <input id="title" type="text"  placeholder="Название">
-            <select v-bind:value="category" >
+            <select>
                 <option >Выберите категорию</option>
                 <option value="classic">Классика</option>
                 <option value="fantazy">Фентези</option>
@@ -82,9 +81,9 @@
             </select>
             <label for="description">Примечание</label>
             <textarea id="description"></textarea>
-            <label for="hour">Томов:</label>
-            <input id="hout" type="number">
-            <button class="btn" v-on:click="addTask">Добавить</button>
+            <label for="books">Томов:</label>
+            <input id="books" type="number">
+            <button class="btn" >Добавить</button>
         </div>
     </section>
     </main>
