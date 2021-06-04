@@ -110,6 +110,8 @@ font-size: 30px;}
 	display: flex;
 	justify-content: space-evenly;}
 	&__item {
+		
+		
 		ol {
 			padding-top:20px;
 			color: #EAE2B7;
@@ -120,16 +122,20 @@ font-size: 30px;}
 	font-size: small;
 	word-break: break-all;}
 
+
 		background-color:#003049;
 		width: 20vw;
 		border-radius: 20px;
 		display: flex;
 		flex-direction: column;
 		padding: 10px;
+		box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	
 
 		img {width: 10vw;
 			height: 10vw;
-		margin: auto;}
+		margin: auto;
+	}
 	}
 	}
 .form {

@@ -16,7 +16,7 @@
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item">
-                    <a class="nav__link" href="#">Форма</a>
+                    <a class="nav__link" href="#add">Форма</a>
                 </li>
         
                 <li class="nav__item">
@@ -24,7 +24,7 @@
                 </li>
             </ul>
         </nav>
-        <button class="theme-changer" id ="toggleTheme">Сменить тему</button>
+        <button class="theme-changer" id="app" @click="themeSwitch">Сменить тему</button>
     </div>
     </header>
 
@@ -67,7 +67,7 @@
 
             </div>
         </section>
-        <section class="add">
+        <section id="add">
             <h2>Добавить новую книгу</h2>
 
         <div class="form">
@@ -91,6 +91,8 @@
     <footer class="page__footer" id ="bottom">
         <p>Иванова Ольга, гр. 201-321. 04.06.2021</p>
     </footer>
-    <script src ="theme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+	<script src="app.js"></script>
+    
 
 </body>
