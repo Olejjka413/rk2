@@ -8,19 +8,36 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #EAE2B7;
   font-family: 'Roboto', Arial, sans-serif;
 }
 
 header {
+  margin-bottom: 50px;
   background-color: #D62828;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
 }
 
 header .nav__list {
   list-style: none;
+}
+
+header .theme-changer {
+  border: none;
+  border-radius: 10%;
+  height: 3vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  background-color: #003049;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #EAE2B7;
 }
 
 footer {
