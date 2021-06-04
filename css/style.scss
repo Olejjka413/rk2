@@ -30,12 +30,17 @@ h3 {
 margin-top: 10px;}
 
 
+@keyframes blink{
+	0%  { transform:rotate(0deg); }
+	100% {  transform:rotate(360deg); }
+  }
 header {
 	width: 100%;
     background-color: #D62828;
 	
 	.logo {
 		margin-left: 40px;
+		animation: blink 2s infinite alternate both;
 	}
 
 	.nav {
@@ -168,7 +173,7 @@ font-size: 30px;}
 		height: 50px;
 		padding-left: 10px;
 		padding-right: 10px;
-		background-color: #003049;
+		background-color: #143d53;
 		font-size: 1.1em;
 		font-weight: 400;
 		color: #EAE2B7;
@@ -183,11 +188,15 @@ font-size: 30px;}
 		&:active {
 			
 			background-color: #D62828;
-			color: #003049;
+			color: #114c6b;
 			box-shadow: 0 0 10px rgba(0,0,0,0.5);;
 		}
+		animation-duration: 3s;
+
+		
 		
 	}
+
 
 }
 footer {

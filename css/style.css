@@ -32,6 +32,28 @@ h3 {
   margin-top: 10px;
 }
 
+@-webkit-keyframes blink {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes blink {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 header {
   width: 100%;
   background-color: #D62828;
@@ -39,6 +61,8 @@ header {
 
 header .logo {
   margin-left: 40px;
+  -webkit-animation: blink 2s infinite alternate both;
+          animation: blink 2s infinite alternate both;
 }
 
 header .nav {
@@ -206,12 +230,14 @@ h1 {
   height: 50px;
   padding-left: 10px;
   padding-right: 10px;
-  background-color: #003049;
+  background-color: #143d53;
   font-size: 1.1em;
   font-weight: 400;
   color: #EAE2B7;
   -webkit-transition: ease-in-out 0.4s;
   transition: ease-in-out 0.4s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
 .form button:hover {
@@ -220,7 +246,7 @@ h1 {
 
 .form button:active {
   background-color: #D62828;
-  color: #003049;
+  color: #114c6b;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
