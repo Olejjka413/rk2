@@ -67,10 +67,25 @@
 
             </div>
         </section>
-        <section class="form">
+        <section class="add">
             <h2>Добавить новую книгу</h2>
-        </section>
-       
+
+        <div class="form">
+            <label for="title">Название</label>
+            <input id="title" type="text"  placeholder="Название">
+            <select v-bind:value="category" >
+                <option >Выберите категорию</option>
+                <option value="classic">Классика</option>
+                <option value="fantazy">Фентези</option>
+                <option value="science">Научная</option>
+            </select>
+            <label for="description">Примечание</label>
+            <textarea id="description"></textarea>
+            <label for="hour">Томов:</label>
+            <input id="hout" type="number">
+            <button class="btn" v-on:click="addTask">Добавить</button>
+        </div>
+    </section>
     </main>
 
     <footer class="page__footer" id ="bottom">
